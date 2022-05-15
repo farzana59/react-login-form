@@ -66,6 +66,7 @@ function RegistrationForm(props) {
     return(
         <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
             <form>
+                
                 <div className="form-group text-left">
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input type="email" 
@@ -100,18 +101,18 @@ function RegistrationForm(props) {
                 </div>
                 <button 
                     type="submit" 
-                    className="btn btn-primary"
+                    className="btn btn-dark"
                     onClick={handleSubmitClick}
                 >
-                    Register
+                    Submit
                 </button>
             </form>
             <div className="alert alert-success mt-2" style={{display: state.successMessage ? 'block' : 'none' }} role="alert">
                 {state.successMessage}
             </div>
             <div className="mt-2">
-                <span>Already account created? </span>
-                <span className="loginText" onClick={() => redirectToLogin()}>Login here</span> 
+                <span>Already account created? Then </span>
+                <span className="loginText" onClick={() => redirectToLogin()}>Login</span> 
             </div>
             
         </div>

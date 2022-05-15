@@ -14,7 +14,7 @@ function Header(props) {
         if(props.location.pathname === '/home'){
             return(
                 <div className="ml-auto">
-                    <button className="btn btn-warning" onClick={() => handleLogout()}>Logout</button>
+                    <button className="btn btn-dark" onClick={() => handleLogout()}>Logout</button>
                 </div>
             )
         }
@@ -24,7 +24,7 @@ function Header(props) {
         props.history.push('/login')
     }
     return(
-        <nav className="navbar navbar-dark bg-warning">
+        <nav className="navbar navbar-dark bg-dark">
             <div className="row col-12 d-flex justify-content-center text-white">
                 <span className="h5">{props.title || title}</span>
                 {renderLogout()}
